@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPF_Ilya.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Ilya"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF1FFB00"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label Content="Операнд 1:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="Operand1TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,10,0,0" Width="100"/>
+
+        <Label Content="Операнд 2:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="Operand2TextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,50,0,0" Width="100"/>
+
+        <Label Content="Знак операции (+, -, *, /):" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90" Foreground="White" FontWeight="Bold"/>
+        <TextBox x:Name="SignTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="200,90,0,0" Width="30"/>
+
+        <Button Content="Вычислить" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0" Click="CalculateButton_Click" Width="75" FontWeight="Bold"/>
+        <TextBlock x:Name="ResultTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="71" Width="756" Foreground="White" FontSize="24" FontWeight="Bold"/>
+        <Button x:Name="CloseButton" Content="Закрыть" HorizontalAlignment="Left" Margin="624,280,0,0" VerticalAlignment="Top" Height="51" Width="98" FontWeight="Bold" FontFamily="Bahnschrift" FontSize="20" Click="CloseButton_Click"/>
+    </Grid>
+</Window>

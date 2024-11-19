@@ -1,0 +1,59 @@
+﻿<Window x:Class="WPF_Ilya.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Ilya"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="#FF5F5F5F" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Translator" Content="Переводчик" HorizontalAlignment="Left" Margin="315,91,0,0" VerticalAlignment="Top" Height="123" Width="118" RenderTransformOrigin="0.5,0.5" Background="White" FontWeight="Bold" FontFamily="Bahnschrift" FontSize="18" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="22.16"/>
+                    <RotateTransform Angle="0.566"/>
+                    <TranslateTransform X="-24.407" Y="-0.596"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Calculator" Content="Калькулятор" HorizontalAlignment="Left" Margin="442,91,0,0" VerticalAlignment="Top" Height="123" Width="118" RenderTransformOrigin="0.5,0.5" Background="White" FontWeight="Bold" FontFamily="Bahnschrift" FontSize="18" Click="Calculator_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="22.16"/>
+                    <RotateTransform Angle="0.566"/>
+                    <TranslateTransform X="-24.413" Y="0.658"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="Paroles" Content="Пароли" HorizontalAlignment="Left" Margin="386,220,0,0" VerticalAlignment="Top" Height="123" Width="118" RenderTransformOrigin="0.5,0.5" Background="#FF3E3E3E" Foreground="White" BorderBrush="White" FontWeight="Bold" FontFamily="Bahnschrift SemiBold" FontSize="18" Click="Paroles_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-24.96"/>
+                    <RotateTransform Angle="0.566"/>
+                    <TranslateTransform X="27.986" Y="0.629"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="gaps" Content="Промежутки" HorizontalAlignment="Left" Margin="258,220,0,0" VerticalAlignment="Top" Height="123" Width="118" RenderTransformOrigin="0.5,0.5" Background="#FF3E3E3E" Foreground="White" BorderBrush="White" FontWeight="Bold" FontFamily="Bahnschrift SemiBold" FontSize="18" Click="gaps_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-24.96"/>
+                    <RotateTransform Angle="0.566"/>
+                    <TranslateTransform X="27.992" Y="-0.635"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="CloseButton" Content="Закрыть" HorizontalAlignment="Left" Margin="624,280,0,0" VerticalAlignment="Top" Height="51" Width="98" FontWeight="Bold" FontFamily="Bahnschrift" FontSize="20" Click="CloseButton_Click"/>
+
+    </Grid>
+</Window>
